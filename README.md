@@ -9,7 +9,8 @@ This repository is a delivery surface and nothing else. `index.html` is built
 from `app/forecast.html` in the private `nado-waves` repository, which holds the
 geometry, the transform and the tests, and `forecast.json` is written there by
 `forecast/live.py`. `geometry.html` is drawn there from the same geometry file
-the forecast reads, by `forecast/geomviz.py`. Both are pushed here by a workflow. **Edit them there** —
+the forecast reads, by `forecast/geomviz.py`, and `info.html` is built from
+`app/info.html`. All three are pushed here by a workflow. **Edit them there** —
 anything committed directly to this repository is overwritten by the next cycle.
 
 ## What the page shows, and what it does not
@@ -21,8 +22,8 @@ as you walk the sand.
 
 **Nothing has ever measured a wave at these three breaks.** The output is
 *physically derived*, never accurate, and carries no error bar because there is
-nothing to compute one against. The page states what it is standing on —
-geometry, model, calibration, observation — and two of those read *none*.
+nothing to compute one against. `info.html` states what each tab is standing
+on — geometry, model, calibration, observation — and two of those read *none*.
 
 Window energy is the offshore energy aimed at a break. It is **not a wave height
 at the beach**: no shoaling, no refraction, no offshore-to-face transfer.
