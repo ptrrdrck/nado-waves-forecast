@@ -8,10 +8,9 @@ Beach, rebuilt after each GFS-Wave cycle.
 This repository is a delivery surface and nothing else. `index.html` is built
 from `app/forecast.html` in the private `nado-waves` repository, which holds the
 geometry, the transform and the tests, and `forecast.json` is written there by
-`forecast/live.py`. `geometry.html` is drawn there from the same geometry file
-the forecast reads, by `forecast/geomviz.py`, and `info.html` is built from
-`app/info.html`, and `docs.html` from `app/docs.html`. All of them are pushed
-here by a workflow. **Edit them there** —
+`forecast/live.py`. `docs.html` is built there from `app/docs.html`, its
+drawings from the same geometry file the forecast reads, by
+`forecast/geomviz.py`. All of them are pushed here by a workflow. **Edit them there** —
 anything committed directly to this repository is overwritten by the next cycle.
 
 ## What the page shows, and what it does not
@@ -23,7 +22,7 @@ as you walk the sand.
 
 **Nothing has ever measured a wave at these three breaks.** The output is
 *physically derived*, never accurate, and carries no error bar because there is
-nothing to compute one against. `info.html` states what each tab is standing
+nothing to compute one against. `docs.html` states what each tab is standing
 on — geometry, model, calibration, observation — and two of those read *none*.
 
 Each break's number is the offshore spectrum carried by physics to where it
